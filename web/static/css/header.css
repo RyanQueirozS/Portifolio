@@ -1,0 +1,40 @@
+.site-header {
+    padding: 3rem 5vw;
+}
+
+.site-nav {
+    max-width: 96rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #908caa;
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 0;
+    text-decoration: none;
+}
+
+.nav-social {
+    padding: 0;
+    margin: 0;
+    list-style-image: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-social ul {
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-social li {
+    display: flex;
+    width: 80px;
+    height: auto;
+    text-align: right;
+}
