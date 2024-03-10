@@ -6,7 +6,5 @@ import (
 
 type PageData struct {
 	Title   template.HTML
-	Heading template.HTML
 	Content template.HTML
-	Footer  template.HTML
 }
