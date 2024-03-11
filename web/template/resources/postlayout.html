@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{.Title}}</title>
+    <title>{{.PageData.Title}}</title>
     <link rel="stylesheet" type="text/css" href="/web/static/css/style.css">
     <link rel="stylesheet" href="/web/static/css/prism.css" />
     <script src="/web/static/js/prism.js"></script>
@@ -28,8 +28,17 @@
         </nav>
     </header>
     <main class="content">
-        <div class="hero">
-            {{.Content}}
+        <div>
+            <div class="hero">
+                {{.PageData.Content}}
+            </div>
+            <ul>
+                {{range .Posts}}
+                <li> <a href="{{.Name}}">{{ slice .Name 11}}</a></li>
+                <dl> {{.Description}}</dl>
+                {{end}}
+            </ul>
+            {{.ShowMore}}
         </div>
     </main>
     <footer class="site-footer">

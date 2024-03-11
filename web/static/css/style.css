@@ -11,8 +11,40 @@ a {
     color: #eb6f92;
 }
 
+pre {
+    display: inline-block;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-color: #286983;
+    border-radius: 5px;
+    background-color: rgb(42, 39, 63);
+}
+
+blockquote {
+    background-color: rgb(42, 39, 63);
+}
+
+dl {
+    color: #6e6a86;
+}
+
+hr {
+    width: 100%;
+}
+
 .social-links {
     filter: invert(100%);
     max-width: 80%;
     height: auto;
+}
+
+.show-more {
+    padding: 0.5em;
+    border-radius: 5px;
+    background-color: rgb(42, 39, 63);
+    text-align: center;
+    width: 15%;
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: 100%;
 }
